@@ -105,8 +105,7 @@ not be very difficult to adapt it to support more if required.
 Flashing
 -------
 From the top level `qmk_firmware` directory run `make KEYBOARD:KEYMAP:avrdude` for automatic serial port resolution and flashing.
-Example: `make lets_split/rev2:default:avrdude`
-
+Example: `make ergo42/rev1:default:avrdude`
 
 Choosing which board to plug the USB cable into (choosing Master)
 --------
@@ -156,7 +155,6 @@ different keymaps for each half. You could program the left half with a QWERTY
 layout and the right half with a Colemak layout using bootmagic's default layout option.
 Then if you connect the left half to a computer by USB the keyboard will use QWERTY and Colemak when the
 right half is connected.
-
 
 Notes on Using Pro Micro 3.3V
 -----------------------------
