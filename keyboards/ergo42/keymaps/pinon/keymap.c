@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
   [LOWER] = LAYOUT( \
     _______, S(KC_1), S(KC_2), S(KC_3), S(KC_4), S(KC_5), _______, _______,S(KC_6), S(KC_7), S(KC_8), S(KC_9),    S(KC_0),  S(KC_EQL), \
-    _______, KC_F1,   KC_F2, KC_F3, KC_F4, KC_F5, KC_LBRC,    KC_RBRC, KC_LEFT, S(KC_MINS), KC_EQL, S(KC_LBRC), S(KC_RBRC), KC_BSLS, \
+    _______, KC_F1,   KC_F2, KC_F3, KC_F4, KC_F5, KC_LBRC,    KC_RBRC, KC_LEFT, S(KC_MINS), S(KC_EQL), S(KC_LBRC), S(KC_RBRC), KC_BSLS, \
     _______, KC_F6,   KC_F7, KC_F8, KC_F9, KC_F10,_______,    _______, KC_F11,   KC_F12, KC_F9, KC_F10,  KC_F11,  SFT_T(KC_RO), \
     _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______, _______, _______ \
   ),
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
   [RAISE] = LAYOUT( \
     _______, KC_1,    KC_2,  KC_3,  KC_4,  KC_5,  _______,       _______, KC_6,    KC_7,    KC_8,  KC_9,    KC_0, KC_DEL, \
-    _______, KC_F1,   KC_F2, KC_F3, KC_F4, KC_F5, S(KC_LBRC),    S(KC_RBRC), S(KC_7), KC_MINS    , S(KC_EQL), KC_LBRC,   KC_RBRC, S(KC_BSLS), \
+    _______, KC_F1,   KC_F2, KC_F3, KC_F4, KC_F5, S(KC_LBRC),    S(KC_RBRC), S(KC_7), KC_MINS    , KC_EQL, KC_LBRC,   KC_RBRC, S(KC_BSLS), \
     _______, KC_F6,   KC_F7, KC_F8, KC_F9, KC_F10,_______,    _______, KC_F7,   KC_F8,   KC_F9, KC_F10,  KC_F11,  SFT_T(KC_RO), \
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,    _______,   _______,    _______ \
   ),
@@ -84,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
   [GAME] = LAYOUT( \
     _______,  _______,KC_UP,   RESET,EEPROM_RESET, _______,     _______,_______,_______,_______,KC_PSCR, KC_HOME,_______,    KC_DEL, \
-    _______, KC_LEFT,   KC_DOWN, KC_RGHT, KC_F4, KC_F5, AG_NORM,     AG_SWAP,_______,_______,_______, KC_UP, KC_RGHT,_______, \
+    _______, KC_LEFT,   KC_DOWN, KC_RGHT, KC_F4, KC_F5, AG_NORM,     AG_SWAP,_______,KC_HOME,_______, KC_UP, KC_RGHT,_______, \
     _______, KC_F6,   KC_F7, KC_F8, KC_F9, KC_F10,_______,    S(KC_RBRC), S(KC_BSLS), KC_END,KC_LEFT,  KC_DOWN,  KC_RGHT, SFT_T(KC_RO), \
     _______, _______, _______, KC_PSCR, KC_ESC, KC_SPC, KC_TAB,     KC_BSPC,    KC_ENT, KC_DELT, KC_LEFT,  KC_DOWN, _______, _______ \
   )
